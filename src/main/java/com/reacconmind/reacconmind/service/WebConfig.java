@@ -12,6 +12,6 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("https://graphql-7xqc.onrender.com") // Permitir solicitudes desde localhost:4200
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
-                .allowCredentials(true); // Si necesitas permitir credenciales (cookies, etc.)
+                .allowCredentials(false); // Si necesitas permitir credenciales (cookies, etc.)
     }
 }
