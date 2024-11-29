@@ -54,7 +54,7 @@ public class SpringConfig {
                         .defaultSuccessUrl("https://graphql-7xqc.onrender.com/api/oauth2/callback/google", true)
                         .failureUrl("/login?error=true")) // Configuración de OAuth2
                 .formLogin(form -> form
-                        .defaultSuccessUrl("https://graphql-7xqc.onrender.com//doc/swagger-ui/index.html", true)
+                        .defaultSuccessUrl("https://graphql-7xqc.onrender.com/doc/swagger-ui/index.html", true)
                         .failureUrl("/login?error=true")) // Configuración de login por formulario
                 .requiresChannel(channel -> channel.anyRequest().requiresSecure()); // Asegurar HTTPS
 
