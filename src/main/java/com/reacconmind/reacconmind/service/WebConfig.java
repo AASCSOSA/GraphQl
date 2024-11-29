@@ -9,7 +9,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("*") // Permitir solicitudes desde localhost:4200
+                .allowedOrigins("https://graphql-7xqc.onrender.com") // Permitir solicitudes desde localhost:4200
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true); // Si necesitas permitir credenciales (cookies, etc.)
