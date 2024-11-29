@@ -51,10 +51,10 @@ public class SpringConfig {
                 .authenticationProvider(authenticationProvider()) // Proveedor de autenticación
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class) // Filtro JWT
                 .oauth2Login(oauth2 -> oauth2
-                        .defaultSuccessUrl("http://localhost:8080/api/oauth2/callback/google", true)
+                        .defaultSuccessUrl("https://graphql-7xqc.onrender.com/api/oauth2/callback/google", true)
                         .failureUrl("/login?error=true")) // Configuración de OAuth2
                 .formLogin(form -> form
-                        .defaultSuccessUrl("http://localhost:8080/doc/swagger-ui/index.html", true)
+                        .defaultSuccessUrl("https://graphql-7xqc.onrender.com//doc/swagger-ui/index.html", true)
                         .failureUrl("/login?error=true")) // Configuración de login por formulario
                 .requiresChannel(channel -> channel.anyRequest().requiresSecure()); // Asegurar HTTPS
 
