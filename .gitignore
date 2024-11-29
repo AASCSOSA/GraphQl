@@ -1,0 +1,34 @@
+# Archivos y carpetas generados por Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+!target/ReacconMind-0.0.1-SNAPSHOT.jar
+
+# Archivos de configuración de Visual Studio Code
+.vscode/
+
+#Archivo de explicación de la conexión con mongoDb
+src/main/resources/connectionDbMongo.example
+
+# Otros archivos que no deberían estar en el control de versiones
+HELP.md
+# Ignora el archivo de configuración de la base de datos
+#src/main/resources/application.properties
+# Permite el archivo de ejemplo
+!src/main/resources/application.properties.example
+# Ignora el archivo reparto de la base de datos
+Bd/Reparto.txt
+
+.classpath
+.project
+.settings/
+
+src/main/resources/firebase-private-key.json
+src/main/resources/firebase-privateAlain-key.json
